@@ -1,0 +1,43 @@
+
+$header-height: 55px;
+$footer-height: 40px;
+
+/*
+ * Sticky footer stuff
+ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  margin: 0 0 $footer-height + 50px; /* bottom = footer height + space */
+}
+
+/*
+ * Content
+ */
+.content {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 840px;
+  padding-top: 3em;
+}
+
+.header {
+  background: #222;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: table;
+  z-index: 100;
+  height: $header-height;
+}
+.footer {
+  background: #ECECEC;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
+}
